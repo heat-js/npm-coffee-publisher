@@ -1,8 +1,11 @@
 {
   "name": "@heat/npm-coffee-publisher",
   "license": "MIT",
-  "version": "0.1.0",
-  "repository": "git@github.com:heat-js/npm-coffee-publisher.git",
+  "version": "0.1.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heat-js/npm-coffee-publisher.git"
+  },
   "bugs": {
     "url": "https://github.com/heat-js/npm-coffee-publisher/issues"
   },
