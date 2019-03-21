@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const fs   		= require('fs');
+const rimraf   	= require('rimraf');
 const paths   	= require('./paths');
 
-fs.rmdirSync(paths.build);
+rimraf.sync(paths.build);

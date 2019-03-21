@@ -45,13 +45,16 @@ function compile(dir) {
 compile(paths.src);
 
 const copyFiles = [
-	'package.js',
+	'package.json',
 	'.npmignore',
 ];
 
-for(var file in copyFiles) {
-	const path 		= paths.join(paths.src, 	file);
-	const newPath 	= paths.join(paths.build, 	file);
+for(var index in copyFiles) {
+	const file 		= copyFiles[index];
+	const oldPath 	= path.join(paths.root, 	file);
+	const newPath 	= path.join(paths.build, 	file);
 
-	fs.copyFileSync(path, newPath);
+	if( fs.existsSync(oldPath) ) {
+		fs.copyFileSync(oldPath, newPath);
+	}
 }
