@@ -2,7 +2,9 @@
 
 const { execSync } = require('child_process');
 
-execSync(
-	'cd .build; yarn publish --access=public',
-	{stdio: 'inherit'}
-);
+try {
+	execSync(
+		'cd .build; yarn publish --non-interactive --access=public',
+		{ stdio: 'inherit' }
+	);
+} catch(error) {}
