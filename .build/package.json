@@ -1,8 +1,11 @@
 {
   "name": "@heat/npm-coffee-publisher",
-  "version": "0.0.2",
-  "repository": "git@github.com:heat-js/npm-coffee-publisher.git",
   "license": "MIT",
+  "version": "0.0.3",
+  "repository": "git@github.com:heat-js/npm-coffee-publisher.git",
+  "bugs": {
+    "url": "https://github.com/heat-js/npm-coffee-publisher/issues"
+  },
   "bin": {
     "ncp-build": "src/build.js",
     "ncp-clean": "src/clean.js",
