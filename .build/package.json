@@ -1,0 +1,18 @@
+{
+  "name": "@heat/npm-coffee-publisher",
+  "version": "0.0.2",
+  "repository": "git@github.com:heat-js/npm-coffee-publisher.git",
+  "license": "MIT",
+  "bin": {
+    "ncp-build": "src/build.js",
+    "ncp-clean": "src/clean.js",
+    "ncp-publish": "src/publish.js",
+    "ncp": "src/index.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "coffeescript": "^2.3.2",
+    "rimraf": "^2.6.3"
+  }
+}
