@@ -3,7 +3,7 @@
 const coffee 	= require('coffeescript');
 const path 		= require('path');
 const fs   		= require('fs');
-const paths   	= require('./paths');
+const paths   	= require('./paths.js');
 
 function compile(dir) {
 	const stat = fs.lstatSync(dir);

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-require('./build');
-require('./publish');
-require('./clean');
+require('./build.js');
+require('./publish.js');
+require('./clean.js');
