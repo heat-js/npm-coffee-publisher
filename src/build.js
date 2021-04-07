@@ -22,6 +22,11 @@ function compile(dir) {
 	}
 	else {
 		if(!dir.endsWith('.coffee')) {
+			const file = fs.readFileSync(dir);
+			const newFile = path.join(paths.build, dir
+				.replace(paths.src, '')
+			);
+			fs.writeFileSync(newFile, file);
 			return;
 		}
 

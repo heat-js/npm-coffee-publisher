@@ -1,7 +1,13 @@
 {
   "name": "@heat/npm-coffee-publisher",
   "license": "MIT",
-  "version": "0.1.7",
+  "version": "0.2.0",
+  "scripts": {
+    "patch": "yarn version --patch; yarn deploy",
+    "minor": "yarn version --minor; yarn deploy",
+    "major": "yarn version --major; yarn deploy",
+    "deploy": "yarn publish --access=public"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/heat-js/npm-coffee-publisher.git"
